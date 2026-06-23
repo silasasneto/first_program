@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contador de Caracteres</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="card" aria-labelledby="app-title">
+        <p class="eyebrow">Ferramenta simples</p>
+        <h1 id="app-title">Contador de Caracteres</h1>
+        <p class="description">
+          Digite ou cole um texto abaixo para ver a contagem de caracteres em tempo real.
+        </p>
+
+        <label for="text-input">Texto para contar</label>
+        <textarea
+          id="text-input"
+          name="text-input"
+          rows="8"
+          placeholder="Digite seu texto aqui..."
+          autofocus
+        ></textarea>
+
+        <div class="stats" aria-live="polite">
+          <article>
+            <span id="char-count">0</span>
+            <small>caracteres com espaços</small>
+          </article>
+          <article>
+            <span id="char-no-space-count">0</span>
+            <small>caracteres sem espaços</small>
+          </article>
+          <article>
+            <span id="word-count">0</span>
+            <small>palavras</small>
+          </article>
+        </div>
+
+        <button id="clear-button" type="button">Limpar texto</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
